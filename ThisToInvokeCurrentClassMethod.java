@@ -1,10 +1,18 @@
 package OOPS;
-
-public class ThisToInvokeCurrentClassMethod {
+Class A{
+	void m(){
+		System.out.println("Hello m")
+	}
+	void n(){
+		System.out.println("Hii n")
+	     this.m
+	}
+}
+	public class ThisToInvokeCurrentClassMethod {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		A a = new A();
+		a.n();
 	}
 
 }
